@@ -1,0 +1,345 @@
+body {
+    padding-top: 80px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+/* GLOBAL STYLES
+           -------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+/* Sticky footer styles
+  -------------------------------------------------- */
+
+html,
+body {
+    /*background-image: url("../img/background.png");*/
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -40px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 40px;
+}
+
+#footer {
+
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+
+.navbar-wrapper .navbar {
+
+}
+
+/* Remove border and change up box shadow for more contrast */
+.navbar .navbar-inner {
+    border: 0;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+}
+
+/* Downsize the brand/project name a bit */
+.navbar .brand {
+    padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+}
+
+/* Navbar links: increase padding for taller navbar */
+.navbar .nav > li > a {
+    padding: 15px 20px;
+}
+
+/* Offset the responsive button for proper vertical alignment */
+.navbar .btn-navbar {
+    margin-top: 10px;
+}
+
+body, input, button, select, textarea, .btn, label, .btn-group > .btn, .btn-group > .dropdown-menu, .btn-group > .popover {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px !important;
+}
+
+@media (max-width: 979px) {
+    body {
+        padding-top: 0px;
+    }
+}
+
+#ajax-loader {
+    text-align: center;
+    padding: 10px;
+    background: #feb215;
+    font-size: 20px;
+    font-weight: bold;
+    color: #9b6901;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+}
+
+.pop-over {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dateSelect {
+    width: 330px !important;
+}
+
+form.cmxform label.error, label.error {
+    color: red;
+    font-style: normal;
+}
+
+input {
+    border: none;
+}
+
+.nav-right {
+    position: relative;
+    left: 0;
+    display: block;
+    margin: 0 10px 0 0;
+    list-style: none;
+
+}
+
+.nav-right>li {
+    float: right;
+}
+
+.nav-right>li>a {
+    padding: 15px 0px;
+    text-decoration: none;
+    display: block;
+    color: #999999;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nav-right>li>a:hover {
+    background-color: transparent;
+    color: #ffffff;
+
+}
+
+.cal_day {
+    position: relative;
+    float: left;
+    margin: 0 4px 4px 0 !important;
+    margin: 0 4px -24px 0;
+    width: 128px;
+    height: 95px;
+    background: url(http://envato.jigowatt.co.uk/code/calendar/assets/day.png) top no-repeat;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.weekend {
+    background-color: #f8a31f !important;
+}
+
+.weekdays {
+    background-color: #ccc !important;
+}
+
+.holidays {
+    background-color: #368ee0 !important;
+}
+
+.off-days {
+    background-color: #00aba9 !important;
+}
+
+.leave {
+    background-color: #368ee0 !important;
+}
+
+.half-day {
+    background-color: #368ee0 !important;
+}
+
+.present-days {
+    background-color: #f8a31f !important;
+}
+
+.datepick {
+    width: 240px !important;
+}
+
+.datepick-month {
+    width: 22em !important;
+}
+
+.datepick-month-header {
+    height: 2.4em !important;
+}
+
+.datepick-month-header>select {
+    width: auto;
+    display: inline-block;
+    height: 1.9em !important;
+}
+
+.datepick-month-header>select>option {
+    color: #333;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.present {
+    background-color: #468847;
+}
+
+.absent {
+    background-color: #b94a48;
+}
+
+.holiday {
+    background-color: #FF4D4D;
+}
+
+.unavailable {
+    background-color: #999999;
+}
+
+.extra {
+    background-color: #3a87ad;
+}
+
+.halfDay {
+    background-color: #c09853;
+}
+.color-box-weekend {
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: #f8a31f;
+}
+
+.color-box-off-day {
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: #00aba9 ;
+}
+
+.color-box-present {
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: #468847;
+}
+
+.color-box-absent {
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: #b94a48;
+}
+
+.color-box-holiday {
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: #FF4D4D;
+}
+
+.color-box-unavailable {
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: #999999;
+}
+
+.color-box-extra {
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: #3a87ad;
+}
+
+.color-box-half-day {
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    background-color: #c09853;
+}
+
+.color-box {
+    display: inline-block;
+    padding: 8px;
+}
+.readonly{
+    background-color: #ffffff !important;
+    cursor: auto !important;
+}
+
+.btn-halfDay{color:#ffffff;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color: #c08c4d;background-image:-moz-linear-gradient(top, #c09853, #c09875);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#c09853), to(#c09875));background-image:-webkit-linear-gradient(top, #c09853, #c09875);background-image:-o-linear-gradient(top, #c09853, #c09875);background-image:linear-gradient(to bottom, #c09853, #c09875);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c09853', endColorstr='#c09875', GradientType=0);border-color:#c09875 #c09875 #c09875;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#51a351;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);}.btn-halfDay:hover,.btn-halfDay:focus,.btn-halfDay:active,.btn-halfDay.active,.btn-halfDay.disabled,.btn-halfDay[disabled]{color:#ffffff;background-color:#c09875;*background-color:#c09875;}
+.btn-halfDay:active,.btn-halfDay.active{background-color: #c0874d  \9;}
+
+.btn-unavailable{color:#ffffff;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color: #999999;background-image:-moz-linear-gradient(top, #999999, #999999);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#999999), to(#999999));background-image:-webkit-linear-gradient(top, #999999, #999999);background-image:-o-linear-gradient(top, #999999, #999999);background-image:linear-gradient(to bottom, #999999, #999999);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#999999', endColorstr='#999999', GradientType=0);border-color:#999999 #999999 #999999;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#999999;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);}.btn-unavailable:hover,.btn-unavailable:focus,.btn-unavailable:active,.btn-unavailable.active,.btn-unavailable.disabled,.btn-unavailable[disabled]{color:#999999;background-color:#999999;*background-color:#999999;}
+.btn-unavailable:active,.btn-unavailable.active{background-color: #999999  \9;}
+
+.home-body{
+    padding-top: 20px;
+    padding-bottom: 0px;
+}

@@ -1,0 +1,87 @@
+[2013-10-08 13:25:15] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Constants' not found' in /home4/avantife/public_html/results.avantifellows.org/app/libraries/repository/ResultRepository.php:45
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-08 13:25:27] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Constants' not found' in /home4/avantife/public_html/results.avantifellows.org/app/libraries/repository/ResultRepository.php:45
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-08 13:27:59] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Constants' not found' in /home4/avantife/public_html/results.avantifellows.org/app/libraries/repository/RegistrationRepository.php:46
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-08 13:35:14] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Constants' not found' in /home4/avantife/public_html/results.avantifellows.org/app/libraries/repository/RegistrationRepository.php:46
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-08 13:51:01] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list'' in /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Connection.php:331
+Stack trace:
+#0 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Connection.php(331): PDO->prepare('insert into `re...')
+#1 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Connection.php(521): Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'insert into `re...', Array)
+#2 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Connection.php(332): Illuminate\Database\Connection->run('insert into `re...', Array, Object(Closure))
+#3 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Connection.php(289): Illuminate\Database\Connection->statement('insert into `re...', Array)
+#4 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(30): Illuminate\Database\Connection->insert('insert into `re...', Array)
+#5 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1441): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `re...', Array, 'id')
+#6 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#7 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(774): call_user_func_array(Array, Array)
+#8 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1257): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#9 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1257): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#10 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1227): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#11 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1139): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#12 /home4/avantife/public_html/results.avantifellows.org/app/libraries/repository/RegistrationRepository.php(23): Illuminate\Database\Eloquent\Model->save()
+#13 /home4/avantife/public_html/results.avantifellows.org/app/libraries/services/RegistrationService.php(21): RegistrationRepository->addRegistration('HITANSHU MALHOT...', '919811070940', 'DEL', Object(DateTime))
+#14 /home4/avantife/public_html/results.avantifellows.org/app/controllers/SMSController.php(76): RegistrationService->addRegistration('HITANSHU MALHOT...', '919811070940', 'DEL', Object(DateTime))
+#15 [internal function]: SMSController->getIndex()
+#16 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#17 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getIndex', Array)
+#18 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getIndex', Array)
+#19 [internal function]: Illuminate\Routing\{closure}()
+#20 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#21 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#22 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#23 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#24 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#25 /home4/avantife/public_html/results.avantifellows.org/public/index.php(49): Illuminate\Foundation\Application->run()
+#26 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list' (SQL: insert into `registrations` (`name`, `mobile`, `city`, `registrationDate`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?)) (Bindings: array (
+  0 => 'HITANSHU MALHOTRA',
+  1 => '919811070940',
+  2 => 'DEL',
+  3 => 
+  DateTime::__set_state(array(
+     'date' => '2013-10-08 13:51:01',
+     'timezone_type' => 3,
+     'timezone' => 'Asia/Calcutta',
+  )),
+  4 => 'New Entry',
+  5 => '2013-10-08 13:51:01',
+  6 => '2013-10-08 13:51:01',
+))' in /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Connection.php:556
+Stack trace:
+#0 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'insert into `re...', Array)
+#1 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Connection.php(332): Illuminate\Database\Connection->run('insert into `re...', Array, Object(Closure))
+#2 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Connection.php(289): Illuminate\Database\Connection->statement('insert into `re...', Array)
+#3 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/Processor.php(30): Illuminate\Database\Connection->insert('insert into `re...', Array)
+#4 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(1441): Illuminate\Database\Query\Processors\Processor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `re...', Array, 'id')
+#5 [internal function]: Illuminate\Database\Query\Builder->insertGetId(Array, 'id')
+#6 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(774): call_user_func_array(Array, Array)
+#7 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1257): Illuminate\Database\Eloquent\Builder->__call('insertGetId', Array)
+#8 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1257): Illuminate\Database\Eloquent\Builder->insertGetId(Array, 'id')
+#9 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1227): Illuminate\Database\Eloquent\Model->insertAndSetId(Object(Illuminate\Database\Eloquent\Builder), Array)
+#10 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1139): Illuminate\Database\Eloquent\Model->performInsert(Object(Illuminate\Database\Eloquent\Builder))
+#11 /home4/avantife/public_html/results.avantifellows.org/app/libraries/repository/RegistrationRepository.php(23): Illuminate\Database\Eloquent\Model->save()
+#12 /home4/avantife/public_html/results.avantifellows.org/app/libraries/services/RegistrationService.php(21): RegistrationRepository->addRegistration('HITANSHU MALHOT...', '919811070940', 'DEL', Object(DateTime))
+#13 /home4/avantife/public_html/results.avantifellows.org/app/controllers/SMSController.php(76): RegistrationService->addRegistration('HITANSHU MALHOT...', '919811070940', 'DEL', Object(DateTime))
+#14 [internal function]: SMSController->getIndex()
+#15 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(138): call_user_func_array(Array, Array)
+#16 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('getIndex', Array)
+#17 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Routing/Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'getIndex', Array)
+#18 [internal function]: Illuminate\Routing\{closure}()
+#19 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Routing/Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Routing/Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Routing/Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 /home4/avantife/public_html/results.avantifellows.org/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 /home4/avantife/public_html/results.avantifellows.org/public/index.php(49): Illuminate\Foundation\Application->run()
+#25 {main} [] []
